@@ -4,7 +4,7 @@ Ce projet est une collection de NFTs représentant différentes races de chats i
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 - Générer des images de chats avec une IA (style Ghibli)
 - Hasher chaque image (SHA-256) et la renommer avec ce hash
@@ -15,7 +15,7 @@ Ce projet est une collection de NFTs représentant différentes races de chats i
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 
 ```
 CATG/
@@ -27,7 +27,7 @@ CATG/
 
 ---
 
-## 🔐 Format des métadonnées JSON
+## Format des métadonnées JSON
 
 Exemple :
 
@@ -46,7 +46,7 @@ Exemple :
 
 ---
 
-## 🧠 Smart Contract
+## Smart Contract
 
 - Développé avec **Solidity** `^0.8.27`
 - Basé sur `ERC721`, `ERC721URIStorage`, `ERC721Enumerable`, `Ownable`
@@ -56,7 +56,7 @@ Exemple :
 
 ---
 
-## 🚀 Déploiement
+## Déploiement
 
 1. Compile et déploie le contrat via [Remix](https://remix.ethereum.org)
 2. Utilise `safeMint()` en fournissant :
@@ -71,6 +71,6 @@ Exemple :
 
 ---
 
-## 📎 Auteur
+## Auteur
 
 Projet réalisé par **Tan Nguyen** dans le cadre d’un exercice d’intégration Web3 / NFTs avec hébergement décentralisé simulé via GitHub.
