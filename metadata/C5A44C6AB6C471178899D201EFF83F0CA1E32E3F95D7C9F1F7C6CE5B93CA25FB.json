@@ -1,0 +1,10 @@
+{
+    "name": "Siamois",
+    "description": "Un chat élégant et espiègle, magnifié par le style Ghibli.",
+    "image": "https://github.com/tonuser/chat-ghibli-nft/blob/main/images/C5A44C6AB6C471178899D201EFF83F0CA1E32E3F95D7C9F1F7C6CE5B93CA25FB.png",
+    "attributes": [
+      { "trait_type": "Race", "value": "Siamois" },
+      { "trait_type": "Style", "value": "Ghibli" }
+    ]
+  }
+  

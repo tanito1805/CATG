@@ -1,0 +1,10 @@
+{
+    "name": "Persan",
+    "description": "Un chat au pelage somptueux et aux yeux profonds, version Ghibli.",
+    "image": "https://github.com/tonuser/chat-ghibli-nft/blob/main/images/A80A395FA293BBF0222D108C9B54C8C74F8430C5BA22CD4A03A155EAF3C12974.png",
+    "attributes": [
+      { "trait_type": "Race", "value": "Persan" },
+      { "trait_type": "Style", "value": "Ghibli" }
+    ]
+  }
+  

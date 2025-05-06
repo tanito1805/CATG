@@ -1,0 +1,10 @@
+{
+    "name": "Chat Noir",
+    "description": "Un chat mystérieux et élégant au style Ghibli.",
+    "image": "https://github.com/tonuser/chat-ghibli-nft/blob/main/images/F7F13E8E0A9C33598336A07286EBC33C08B96DD8D88661E48D7D70AAA1535DBD.png",
+    "attributes": [
+      { "trait_type": "Race", "value": "Chat Noir" },
+      { "trait_type": "Style", "value": "Ghibli" }
+    ]
+  }
+  

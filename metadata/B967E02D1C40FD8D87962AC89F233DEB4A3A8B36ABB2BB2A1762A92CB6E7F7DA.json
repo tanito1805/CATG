@@ -1,0 +1,9 @@
+{
+  "name": "British Short Hair",
+  "description": "Un chat majestueux au style Ghibli.",
+  "image": "https://github.com/tonuser/chat-ghibli-nft/blob/main/images/B967E02D1C40FD8D87962AC89F233DEB4A3A8B36ABB2BB2A1762A92CB6E7F7DA.png",
+  "attributes": [
+    { "trait_type": "Race", "value": "British Short Hair" },
+    { "trait_type": "Style", "value": "Ghibli" }
+  ]
+}

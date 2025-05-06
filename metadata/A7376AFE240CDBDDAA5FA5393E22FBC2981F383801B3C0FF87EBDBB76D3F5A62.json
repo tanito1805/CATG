@@ -1,0 +1,10 @@
+{
+    "name": "Sphinx",
+    "description": "Un chat sans poils au charisme unique, réinterprété façon Ghibli.",
+    "image": "https://github.com/tonuser/chat-ghibli-nft/blob/main/images/A7376AFE240CDBDDAA5FA5393E22FBC2981F383801B3C0FF87EBDBB76D3F5A62.png",
+    "attributes": [
+      { "trait_type": "Race", "value": "Sphinx" },
+      { "trait_type": "Style", "value": "Ghibli" }
+    ]
+  }
+  
