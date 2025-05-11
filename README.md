@@ -73,4 +73,4 @@ Exemple :
 
 ## Auteur
 
-Projet réalisé par **Tan Nguyen** dans le cadre d’un exercice d’intégration Web3 / NFTs avec hébergement décentralisé simulé via GitHub.
+Projet réalisé par **Tan Nguyen**, **Julien Frey** et **Dina El Kacimi** dans le cadre d’un exercice d’intégration Web3 / NFTs avec hébergement décentralisé simulé via GitHub.
