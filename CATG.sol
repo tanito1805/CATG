@@ -8,6 +8,10 @@ import {ERC721URIStorage} from "@openzeppelin/contracts@5.3.0/token/ERC721/exten
 import {Ownable} from "@openzeppelin/contracts@5.3.0/access/Ownable.sol";
 
 contract CATG is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
+
+    mapping(uint256 => uint256) public claims;
+    uint256 public constant CLAIM_PERIOD = 30 days;
+
     constructor(address initialOwner)
         ERC721("CATG", "CATG")
         Ownable(initialOwner)
@@ -21,8 +25,31 @@ contract CATG is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
         _setTokenURI(tokenId, uri);
     }
 
-    // The following functions are overrides required by Solidity.
+    /// @notice Démarre une réclamation pour un token perdu
+    function claim(uint256 tokenId) external onlyOwner {
+    require(claims[tokenId] == 0, "Claim already in progress");
+    claims[tokenId] = block.timestamp;
+    }
 
+    /// @notice Le contractOwner finalise la réclamation si aucun mouvement depuis 30 jours
+    function finalizeClaim(uint256 tokenId) external onlyOwner {
+    require(claims[tokenId] != 0, "No active claim");
+    require(block.timestamp >= claims[tokenId] + CLAIM_PERIOD, "Claim period not over");
+
+    address currentOwner = ownerOf(tokenId);
+    _transfer(currentOwner, owner(), tokenId);
+    claims[tokenId] = 0; // reset la réclamation
+    }
+
+    /// @notice Permet au propriétaire réel d’annuler la réclamation s’il récupère l’accès
+    function cancelClaim(uint256 tokenId) external {
+    require(claims[tokenId] != 0, "No active claim");
+    require(msg.sender == ownerOf(tokenId), "Only the token owner can cancel the claim");
+
+    claims[tokenId] = 0;
+    }
+
+    // The following functions are overrides required by Solidity.
     function _update(address to, uint256 tokenId, address auth)
         internal
         override(ERC721, ERC721Enumerable)
